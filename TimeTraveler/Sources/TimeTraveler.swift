@@ -21,7 +21,7 @@ extension NSDate {
     private var intervalOfOneDay: NSTimeInterval {
         
         get {
-            
+
             return NSTimeInterval(60 * 60 * 24)
         }
         
