@@ -12,6 +12,7 @@
 		52FAFA851CA575C3005A8187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FAFA831CA575C3005A8187 /* Main.storyboard */; };
 		52FAFA871CA575C3005A8187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FAFA861CA575C3005A8187 /* Assets.xcassets */; };
 		52FAFA8A1CA575C3005A8187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FAFA881CA575C3005A8187 /* LaunchScreen.storyboard */; };
+		52FAFA931CA57618005A8187 /* TimeTraveler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAFA921CA57618005A8187 /* TimeTraveler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		52FAFA861CA575C3005A8187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52FAFA891CA575C3005A8187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52FAFA8B1CA575C3005A8187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FAFA921CA57618005A8187 /* TimeTraveler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTraveler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		52FAFA7E1CA575C2005A8187 /* TimeTraveler */ = {
 			isa = PBXGroup;
 			children = (
+				52FAFA911CA575CC005A8187 /* Sources */,
 				52FAFA7F1CA575C2005A8187 /* AppDelegate.swift */,
 				52FAFA811CA575C2005A8187 /* ViewController.swift */,
 				52FAFA831CA575C3005A8187 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				52FAFA8B1CA575C3005A8187 /* Info.plist */,
 			);
 			path = TimeTraveler;
+			sourceTree = "<group>";
+		};
+		52FAFA911CA575CC005A8187 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				52FAFA921CA57618005A8187 /* TimeTraveler.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FAFA931CA57618005A8187 /* TimeTraveler.swift in Sources */,
 				52FAFA821CA575C2005A8187 /* ViewController.swift in Sources */,
 				52FAFA801CA575C2005A8187 /* AppDelegate.swift in Sources */,
 			);
