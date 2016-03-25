@@ -8,6 +8,17 @@
 
 import Foundation
 
+enum MomentUnit {
+    
+    case Year
+    case Month
+    case Week
+    case Day
+    case Hour
+    case Minute
+    case Second
+}
+
 extension NSDate {
     
     private var calendar: NSCalendar {
@@ -20,11 +31,7 @@ extension NSDate {
     
     private var intervalOfOneDay: NSTimeInterval {
         
-        get {
-
-            return NSTimeInterval(60 * 60 * 24)
-        }
-        
+        get { return NSTimeInterval(60 * 60 * 24) }
     }
     
     var startOfDay: NSDate {
@@ -86,6 +93,16 @@ extension NSDate {
             return components.minute
         }
     }
+    
+    var second: Int {
+        
+        get {
+            
+            let components = calendar.components(.Second, fromDate: self)
+            return components.second
+        }
+    }
+
     
     var weekday: Int {
         
