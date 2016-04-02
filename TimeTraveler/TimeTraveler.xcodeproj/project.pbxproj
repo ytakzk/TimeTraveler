@@ -9,7 +9,20 @@
 /* Begin PBXBuildFile section */
 		52C489F61CA5959F00F0F5C5 /* TimeTraveler.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C489F51CA5959F00F0F5C5 /* TimeTraveler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52C489FF1CA595B700F0F5C5 /* TimeTraveler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C489FE1CA595B700F0F5C5 /* TimeTraveler.swift */; };
+		710C4E171CAFF28800EFFC66 /* TimeTravelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C4E161CAFF28800EFFC66 /* TimeTravelerTests.swift */; };
+		710C4E191CAFF28800EFFC66 /* TimeTraveler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C489F21CA5959F00F0F5C5 /* TimeTraveler.framework */; };
+		710C4E1F1CAFF4BA00EFFC66 /* TimeTraveler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C489FE1CA595B700F0F5C5 /* TimeTraveler.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		710C4E1A1CAFF28800EFFC66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C489E91CA5959F00F0F5C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C489F11CA5959F00F0F5C5;
+			remoteInfo = TimeTraveler;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		52C489F21CA5959F00F0F5C5 /* TimeTraveler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TimeTraveler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -17,6 +30,9 @@
 		52C489F71CA5959F00F0F5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C489FE1CA595B700F0F5C5 /* TimeTraveler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTraveler.swift; sourceTree = "<group>"; };
 		52C48A001CA5965800F0F5C5 /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
+		710C4E141CAFF28800EFFC66 /* TimeTravelerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTravelerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		710C4E161CAFF28800EFFC66 /* TimeTravelerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTravelerTests.swift; sourceTree = "<group>"; };
+		710C4E181CAFF28800EFFC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +40,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4E111CAFF28800EFFC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710C4E191CAFF28800EFFC66 /* TimeTraveler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +60,7 @@
 				52C48A001CA5965800F0F5C5 /* Demo.playground */,
 				52C489FD1CA595A400F0F5C5 /* Sources */,
 				52C489F41CA5959F00F0F5C5 /* TimeTraveler */,
+				710C4E151CAFF28800EFFC66 /* TimeTravelerTests */,
 				52C489F31CA5959F00F0F5C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				52C489F21CA5959F00F0F5C5 /* TimeTraveler.framework */,
+				710C4E141CAFF28800EFFC66 /* TimeTravelerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +89,15 @@
 				52C489FE1CA595B700F0F5C5 /* TimeTraveler.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		710C4E151CAFF28800EFFC66 /* TimeTravelerTests */ = {
+			isa = PBXGroup;
+			children = (
+				710C4E161CAFF28800EFFC66 /* TimeTravelerTests.swift */,
+				710C4E181CAFF28800EFFC66 /* Info.plist */,
+			);
+			path = TimeTravelerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,17 +132,40 @@
 			productReference = 52C489F21CA5959F00F0F5C5 /* TimeTraveler.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		710C4E131CAFF28800EFFC66 /* TimeTravelerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 710C4E1E1CAFF28800EFFC66 /* Build configuration list for PBXNativeTarget "TimeTravelerTests" */;
+			buildPhases = (
+				710C4E101CAFF28800EFFC66 /* Sources */,
+				710C4E111CAFF28800EFFC66 /* Frameworks */,
+				710C4E121CAFF28800EFFC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				710C4E1B1CAFF28800EFFC66 /* PBXTargetDependency */,
+			);
+			name = TimeTravelerTests;
+			productName = TimeTravelerTests;
+			productReference = 710C4E141CAFF28800EFFC66 /* TimeTravelerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		52C489E91CA5959F00F0F5C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ytakzk;
 				TargetAttributes = {
 					52C489F11CA5959F00F0F5C5 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					710C4E131CAFF28800EFFC66 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 38PYR27K62;
 					};
 				};
 			};
@@ -124,12 +182,20 @@
 			projectRoot = "";
 			targets = (
 				52C489F11CA5959F00F0F5C5 /* TimeTraveler */,
+				710C4E131CAFF28800EFFC66 /* TimeTravelerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		52C489F01CA5959F00F0F5C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4E121CAFF28800EFFC66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -147,7 +213,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		710C4E101CAFF28800EFFC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710C4E171CAFF28800EFFC66 /* TimeTravelerTests.swift in Sources */,
+				710C4E1F1CAFF4BA00EFFC66 /* TimeTraveler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		710C4E1B1CAFF28800EFFC66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C489F11CA5959F00F0F5C5 /* TimeTraveler */;
+			targetProxy = 710C4E1A1CAFF28800EFFC66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		52C489F81CA5959F00F0F5C5 /* Debug */ = {
@@ -276,6 +359,28 @@
 			};
 			name = Release;
 		};
+		710C4E1C1CAFF28800EFFC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeTravelerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ytakzk.TimeTravelerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		710C4E1D1CAFF28800EFFC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeTravelerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ytakzk.TimeTravelerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -293,6 +398,15 @@
 			buildConfigurations = (
 				52C489FB1CA5959F00F0F5C5 /* Debug */,
 				52C489FC1CA5959F00F0F5C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		710C4E1E1CAFF28800EFFC66 /* Build configuration list for PBXNativeTarget "TimeTravelerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710C4E1C1CAFF28800EFFC66 /* Debug */,
+				710C4E1D1CAFF28800EFFC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
